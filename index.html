@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Киноклуб «Кадр»</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #111111;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      header {
+        text-align: center;
+        padding: 80px 20px 60px;
+        background: #181818;
+      }
+
+      header h1 {
+        font-size: 56px;
+        margin-bottom: 15px;
+      }
+
+      header p {
+        font-size: 20px;
+        color: #bdbdbd;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .card {
+        background: #1e1e1e;
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid #333333;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        background: #252525;
+      }
+
+      .card h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        color: #c7c7c7;
+        font-size: 16px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px 20px;
+        background: #181818;
+        color: #bdbdbd;
+      }
+
+      footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 800px) {
+        header h1 {
+          font-size: 42px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Посмотрите фильм «Кадр»</h1>
+      <p>Смотрим фильмы. Обсуждаем. Создаём свои истории.</p>
+    </header>
+
+    <main>
+      <section class="cards">
+        <article class="card">
+          <h2>🎬 Обсуждения</h2>
+          <p>
+            После просмотра мы обсуждаем сюжеты, персонажей, идеи и делимся
+            своим мнением о фильмах.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>🌙 Вечерние показы</h2>
+          <p>
+            Организуем уютные вечерние кинопоказы, выбираем интересные фильмы и
+            проводим время вместе.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>📹 Прокат оборудования</h2>
+          <p>
+            Участники клуба могут брать школьное оборудование для съёмки
+            собственных видео, проектов и короткометражек.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Связаться с нами:
+        <a href="mailto:kinoclub@school.kz">kinoclub@school.kz</a>
+      </p>
+    </footer>
+  </body>
+</html>
